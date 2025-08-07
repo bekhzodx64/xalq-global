@@ -3,25 +3,28 @@ import Image from 'next/image'
 export default function PricesCard({ sale, position, oldPrice }) {
 	return (
 		<div
-			className={`${position === 'center' && 'translate-y-[130px]'} ${
-				position === 'pre' && 'translate-y-[100px]'
-			} relative flex flex-col items-center gap-6 bg-white px-12 py-10 border border-[#D4D4D4B5]/70 rounded-2xl max-w-[230px]`}
+			className={`${position === 'center' && '2xl:translate-y-[130px] '} ${
+				position === 'pre' && '2xl:translate-y-[100px] '
+			} relative flex flex-col items-center gap-4 md:gap-6 bg-white px-6 md:px-8 lg:px-12 py-6 md:py-8 lg:py-10 border border-[#D4D4D4B5]/70 rounded-xl md:rounded-2xl w-full max-w-[280px] hover:shadow-lg transition-shadow duration-200`}
 		>
 			{sale && (
-				<span className='top-0 absolute bg-[#FD1A1D] px-9 py-3.5 rounded-full font-bold text-white -translate-y-1/2'>
+				<span className='top-0 absolute bg-[#FD1A1D] px-4 md:px-6 lg:px-9 py-2 md:py-3 lg:py-3.5 rounded-full font-bold text-white text-xs md:text-sm -translate-y-1/2'>
 					Скидка
 				</span>
 			)}
 
 			<Image
 				src='/prices-icon/box.svg'
-				width={79}
-				height={78}
+				width={60}
+				height={60}
 				alt='box'
+				className='md:w-20 lg:w-[79px] md:h-20 lg:h-[78px]'
 			/>
 
-			<div>
-				<h3 className='font-bold text-[#1F2148] text-2xl'>5-8 паллет</h3>
+			<div className='text-center'>
+				<h3 className='font-bold text-[#1F2148] text-lg md:text-xl lg:text-2xl'>
+					5-8 паллет
+				</h3>
 				<p className='bg-clip-text bg-gradient-to-r from-[#FFB339] to-[#F7751E] text-transparent text-xs'>
 					⚡Популярный выбор
 				</p>
@@ -40,10 +43,10 @@ export default function PricesCard({ sale, position, oldPrice }) {
 						</>
 					)}
 				</p>
-				<p className='bg-clip-text bg-gradient-to-r from-[#FFB339] to-[#F7751E] font-extrabold text-transparent text-4xl'>
+				<p className='bg-clip-text bg-gradient-to-r from-[#FFB339] to-[#F7751E] font-extrabold text-transparent text-2xl md:text-3xl lg:text-4xl'>
 					175 $
 				</p>
-				<p className='text-[#1F2148]'>за паллету</p>
+				<p className='text-[#1F2148] text-sm md:text-base'>за паллету</p>
 			</div>
 		</div>
 	)
