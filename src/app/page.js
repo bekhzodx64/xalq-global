@@ -1,3 +1,5 @@
+import Download from '@/components/sections/download'
+
 export default function Home() {
 	return (
 		<>
@@ -7,7 +9,7 @@ export default function Home() {
 			{/* <Info /> */}
 			{/* <ContactForm /> */}
 			{/* <Questions /> */}
-			{/* <Download /> */}
+			<Download />
 		</>
 	)
 }
