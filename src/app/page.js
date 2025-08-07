@@ -1,4 +1,4 @@
-import Download from '@/components/sections/download'
+import Questions from '@/components/sections/questions'
 
 export default function Home() {
 	return (
@@ -8,8 +8,8 @@ export default function Home() {
 			{/* <Plans /> */}
 			{/* <Info /> */}
 			{/* <ContactForm /> */}
-			{/* <Questions /> */}
-			<Download />
+			<Questions />
+			{/* <Download /> */}
 		</>
 	)
 }
