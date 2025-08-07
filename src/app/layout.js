@@ -1,4 +1,4 @@
-import Footer from '@/components/shared/footer'
+import Header from '@/components/shared/header'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
 			className='scroll-smooth'
 		>
 			<body className={`${inter.className} antialiased bg-[#F1F2F4]`}>
-				{/* <Header /> */}
+				<Header />
 				<main>{children}</main>
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	)
