@@ -1,10 +1,10 @@
-import Prices from '@/components/sections/prices'
+import Intro from '@/components/sections/intro'
 
 export default function Home() {
 	return (
 		<>
-			{/* <Intro /> */}
-			<Prices />
+			<Intro />
+			{/* <Prices /> */}
 			{/* <Plans /> */}
 			{/* <Info /> */}
 			{/* <ContactForm /> */}
