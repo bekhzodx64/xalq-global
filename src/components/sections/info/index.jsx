@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Info() {
 	return (
-		<section className='gap-9 grid grid-cols-4 mx-auto pt-20 pb-10 container'>
-			<div className='group gap-7 grid bg-white hover:bg-[#1D5BD6] p-7 border border-[#CBD5E1] rounded-2xl transition-all'>
+		<section className='gap-4 sm:gap-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto px-4 sm:px-0 pt-10 sm:pt-20 pb-6 sm:pb-10 container'>
+			<div className='group gap-4 sm:gap-7 grid bg-white hover:bg-[#1D5BD6] p-4 sm:p-7 border border-[#CBD5E1] rounded-xl sm:rounded-2xl transition-all'>
 				<svg
 					width='56'
 					height='56'
@@ -27,13 +27,12 @@ export default function Info() {
 						</clipPath>
 					</defs>
 				</svg>
-
-				<p className='font-medium text-[#0F172A] group-hover:text-white text-2xl text-balance'>
+				<p className='font-medium text-[#0F172A] group-hover:text-white text-lg sm:text-2xl text-balance'>
 					Официальные перевозки
 				</p>
 			</div>
 
-			<div className='group gap-7 grid bg-white hover:bg-[#1D5BD6] p-7 border border-[#CBD5E1] rounded-2xl transition-all'>
+			<div className='group gap-4 sm:gap-7 grid bg-white hover:bg-[#1D5BD6] p-4 sm:p-7 border border-[#CBD5E1] rounded-xl sm:rounded-2xl transition-all'>
 				<svg
 					width='208'
 					height='70'
@@ -114,13 +113,12 @@ export default function Info() {
 						</clipPath>
 					</defs>
 				</svg>
-
-				<p className='font-medium text-[#0F172A] group-hover:text-white text-2xl text-balance'>
+				<p className='font-medium text-[#0F172A] group-hover:text-white text-lg sm:text-2xl text-balance'>
 					В обе стороны: Ташкент — Москва
 				</p>
 			</div>
 
-			<div className='group gap-7 grid bg-white hover:bg-[#1D5BD6] p-7 border border-[#CBD5E1] rounded-2xl transition-all'>
+			<div className='group gap-4 sm:gap-7 grid bg-white hover:bg-[#1D5BD6] p-4 sm:p-7 border border-[#CBD5E1] rounded-xl sm:rounded-2xl transition-all'>
 				<svg
 					width='56'
 					height='56'
@@ -141,13 +139,12 @@ export default function Info() {
 						className='fill-[#1D5BD6] group-hover:fill-white'
 					/>
 				</svg>
-
-				<p className='font-medium text-[#0F172A] group-hover:text-white text-2xl text-balance'>
+				<p className='font-medium text-[#0F172A] group-hover:text-white text-lg sm:text-2xl text-balance'>
 					Подходит для бизнеса и частных лиц
 				</p>
 			</div>
 
-			<div className='group gap-7 grid bg-white hover:bg-[#1D5BD6] p-7 border border-[#CBD5E1] rounded-2xl transition-all'>
+			<div className='group gap-4 sm:gap-7 grid bg-white hover:bg-[#1D5BD6] p-4 sm:p-7 border border-[#CBD5E1] rounded-xl sm:rounded-2xl transition-all'>
 				<svg
 					width='59'
 					height='59'
@@ -160,22 +157,22 @@ export default function Info() {
 						className='fill-[#1D5BD6] group-hover:fill-white'
 					/>
 				</svg>
-
-				<p className='font-medium text-[#0F172A] group-hover:text-white text-2xl text-balance'>
+				<p className='font-medium text-[#0F172A] group-hover:text-white text-lg sm:text-2xl text-balance'>
 					Прозрачный тариф и быстрая доставка
 				</p>
 			</div>
 
-			<div className='flex justify-center col-span-4 w-full'>
+			<div className='flex justify-center col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4 mt-4 sm:mt-0 w-full'>
 				<button
 					type='button'
-					className='flex items-center gap-2.5 bg-[#FFB339] px-6 py-5 rounded-[10px] text-white text-xl cursor-pointer'
+					className='flex justify-center items-center gap-2 sm:gap-2.5 bg-[#FFB339] px-4 sm:px-6 py-3 sm:py-5 rounded-[8px] sm:rounded-[10px] w-full sm:w-auto text-white text-base sm:text-xl cursor-pointer'
 				>
 					<Image
 						src='/icons/phone.svg'
-						width={24}
-						height={24}
+						width={20}
+						height={20}
 						alt='phone'
+						className='sm:w-6 sm:h-6'
 					/>
 					Позвонить
 				</button>

@@ -1,12 +1,12 @@
-import Intro from '@/components/sections/intro'
+import Info from '@/components/sections/info'
 
 export default function Home() {
 	return (
 		<>
-			<Intro />
+			{/* <Intro /> */}
 			{/* <Prices /> */}
 			{/* <Plans /> */}
-			{/* <Info /> */}
+			<Info />
 			{/* <ContactForm /> */}
 			{/* <Questions /> */}
 			{/* <Download /> */}
