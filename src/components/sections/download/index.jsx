@@ -7,7 +7,6 @@ export default function Download() {
 		<section className='bg-[#F5F5F5] py-6 md:py-8 lg:py-12'>
 			<div className='mx-auto px-4 container'>
 				<div className='flex lg:flex-row flex-col justify-between gap-8 lg:gap-12'>
-					{/* Секция с кнопками скачивания */}
 					<div className='flex flex-col gap-4 md:gap-6 lg:text-left text-center'>
 						<h2 className='font-medium'>Скачивайте прямо сейчас</h2>
 
@@ -40,7 +39,6 @@ export default function Download() {
 						</div>
 					</div>
 
-					{/* Секция с социальными сетями */}
 					<div className='flex flex-col gap-4 md:gap-6 w-full lg:max-w-xs lg:text-left text-center'>
 						<h2 className='font-medium'>Следуйте за нами</h2>
 

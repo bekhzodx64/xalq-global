@@ -53,7 +53,6 @@ export default function HeaderNav() {
 					</li>
 				</ul>
 
-				{/* Mobile Menu Button */}
 				<button
 					onClick={toggleMenu}
 					className='md:hidden flex flex-col justify-center items-center space-y-1 w-8 h-8'
@@ -77,7 +76,6 @@ export default function HeaderNav() {
 				</button>
 			</div>
 
-			{/* Mobile Menu */}
 			<div
 				className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 ${
 					isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
