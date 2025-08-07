@@ -1,13 +1,13 @@
-import ContactForm from '@/components/sections/contact-form'
+import Plans from '@/components/sections/plans'
 
 export default function Home() {
 	return (
 		<>
 			{/* <Intro /> */}
 			{/* <Prices /> */}
-			{/* <Plans /> */}
+			<Plans />
 			{/* <Info /> */}
-			<ContactForm />
+			{/* <ContactForm /> */}
 			{/* <Questions /> */}
 			{/* <Download /> */}
 		</>
