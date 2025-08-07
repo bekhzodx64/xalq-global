@@ -1,4 +1,4 @@
-import Questions from '@/components/sections/questions'
+import ContactForm from '@/components/sections/contact-form'
 
 export default function Home() {
 	return (
@@ -7,8 +7,8 @@ export default function Home() {
 			{/* <Prices /> */}
 			{/* <Plans /> */}
 			{/* <Info /> */}
-			{/* <ContactForm /> */}
-			<Questions />
+			<ContactForm />
+			{/* <Questions /> */}
 			{/* <Download /> */}
 		</>
 	)
