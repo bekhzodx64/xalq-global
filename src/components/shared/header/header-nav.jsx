@@ -1,10 +1,13 @@
 'use client'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
 export default function HeaderNav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+	const t = useTranslations('Header')
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen)
@@ -32,7 +35,7 @@ export default function HeaderNav() {
 							href='#prices'
 							className='font-medium hover:text-blue-600 transition-colors'
 						>
-							Тарифы на доставку
+							{t('nav1')}
 						</Link>
 					</li>
 					<li>
@@ -40,7 +43,7 @@ export default function HeaderNav() {
 							href='#plans'
 							className='font-medium hover:text-blue-600 transition-colors'
 						>
-							Услуги
+							{t('nav2')}
 						</Link>
 					</li>
 					<li>
@@ -48,7 +51,7 @@ export default function HeaderNav() {
 							href='#contact-form'
 							className='font-medium hover:text-blue-600 transition-colors'
 						>
-							Бесплатный расчет
+							{t('nav3')}
 						</Link>
 					</li>
 				</ul>
@@ -88,7 +91,7 @@ export default function HeaderNav() {
 							className='block py-2 font-medium hover:text-blue-600 transition-colors'
 							onClick={() => setIsMenuOpen(false)}
 						>
-							Тарифы на доставку
+							{t('nav1')}
 						</Link>
 					</li>
 					<li>
@@ -97,7 +100,7 @@ export default function HeaderNav() {
 							className='block py-2 font-medium hover:text-blue-600 transition-colors'
 							onClick={() => setIsMenuOpen(false)}
 						>
-							Услуги
+							{t('nav2')}
 						</Link>
 					</li>
 					<li>
@@ -106,7 +109,7 @@ export default function HeaderNav() {
 							className='block py-2 font-medium hover:text-blue-600 transition-colors'
 							onClick={() => setIsMenuOpen(false)}
 						>
-							Бесплатный расчет
+							{t('nav3')}
 						</Link>
 					</li>
 				</ul>

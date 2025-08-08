@@ -1,7 +1,10 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Intro() {
+	const t = useTranslations('Intro')
+
 	return (
 		<section className='flex flex-col justify-center bg-[#1D5BD6] py-8 md:py-12 lg:py-16 min-h-[75dvh]'>
 			<div className='mx-auto px-4 md:px-6 lg:px-8 container'>
@@ -9,13 +12,13 @@ export default function Intro() {
 					<div className='w-full lg:w-1/2 lg:text-left text-center'>
 						<div className='mb-4 md:mb-6'>
 							<span className='inline-block bg-[#DBEAFE] px-3 md:px-4 py-1 md:py-1.5 rounded-full font-medium text-[#1D4ED8] text-xs md:text-sm'>
-								Международная доставка
+								{t('badge')}
 							</span>
 						</div>
 
 						<div className='mx-auto lg:mx-0 max-w-[650px]'>
 							<p className='relative mb-4 md:mb-6 font-bold text-white xl:text-[40px] text-2xl md:text-3xl lg:text-4xl leading-tight'>
-								Официальная доставка коммерческих сборных грузов по направлению
+								{t('mainTitle')}
 								<Image
 									src='/icons/return.svg'
 									width={60}
@@ -36,7 +39,7 @@ export default function Intro() {
 							</div>
 
 							<p className='mb-8 md:mb-10 lg:mb-14 text-white text-base md:text-lg lg:text-xl'>
-								Работаем с юридическими и физическими лицами.
+								{t('subtitle')}
 							</p>
 						</div>
 
@@ -45,13 +48,13 @@ export default function Intro() {
 								href='/'
 								className='inline-block bg-[#FFB339] hover:bg-[#e6a233] px-6 md:px-8 py-3 md:py-3.5 rounded-lg font-semibold text-white text-sm md:text-base transition-colors duration-200'
 							>
-								Зарегистрироваться
+								{t('authorization')}
 							</Link>
 							<Link
 								href='#contact-form'
 								className='inline-block hover:bg-white px-6 md:px-8 py-3 md:py-3.5 border border-white rounded-lg font-semibold text-white hover:text-[#1D5BD6] text-sm md:text-base transition-colors duration-200'
 							>
-								Рассчитать стоимость
+								{t('calculate')}
 							</Link>
 						</div>
 					</div>

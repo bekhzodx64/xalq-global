@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 export default function FormInfo() {
+	const t = useTranslations('Form')
+
 	return (
 		<div className='flex flex-col justify-center gap-4 md:gap-6 w-full lg:max-w-[535px] lg:text-left text-center'>
 			<div>
@@ -12,11 +15,11 @@ export default function FormInfo() {
 						alt='calculator'
 						className='md:w-3.5 md:h-4'
 					/>
-					Бесплатный расчет
+					{t('badge')}
 				</span>
 			</div>
 			<h2 className='font-bold text-[#111827] text-2xl md:text-3xl lg:text-4xl leading-none'>
-				Оставьте заявку — мы рассчитаем доставку под ваш груз
+				{t('title')}
 			</h2>
 			<ul className='gap-2 grid text-[#6B7280] text-sm md:text-base'>
 				<li className='flex items-center gap-2 md:gap-3'>
@@ -27,7 +30,7 @@ export default function FormInfo() {
 						alt='marker'
 						className='flex-shrink-0 md:w-5 md:h-5'
 					/>
-					<span>Индивидуальный расчет стоимости</span>
+					<span>{t('list1')}</span>
 				</li>
 				<li className='flex items-center gap-2 md:gap-3'>
 					<Image
@@ -37,7 +40,7 @@ export default function FormInfo() {
 						alt='marker'
 						className='flex-shrink-0 md:w-5 md:h-5'
 					/>
-					<span>Консультация специалиста</span>
+					<span>{t('list2')}</span>
 				</li>
 				<li className='flex items-center gap-2 md:gap-3'>
 					<Image
@@ -47,7 +50,7 @@ export default function FormInfo() {
 						alt='marker'
 						className='flex-shrink-0 md:w-5 md:h-5'
 					/>
-					<span>Ответ в течение 30 минут</span>
+					<span>{t('list3')}</span>
 				</li>
 			</ul>
 		</div>

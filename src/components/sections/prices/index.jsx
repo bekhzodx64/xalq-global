@@ -1,7 +1,10 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import PricesCard from './prices-card'
 
 export default function Prices() {
+	const t = useTranslations('Prices')
+
 	return (
 		<section
 			className='flex flex-col gap-6 md:gap-7 mx-auto px-4 md:px-6 lg:px-8 pt-8 md:pt-12 lg:pt-14 pb-20 md:pb-32 lg:pb-52 scroll-mt-[140px] container'
@@ -18,9 +21,9 @@ export default function Prices() {
 					/>
 					<div>
 						<h3 className='font-bold text-[#1F2148] text-sm md:text-base'>
-							Евро паллета
+							{t('typeTitle')}
 						</h3>
-						<p className='text-xs'>120×80 см</p>
+						<p className='text-xs'>120×80 {t('typeLength')}</p>
 					</div>
 				</div>
 				<div className='flex justify-start items-center gap-2 md:gap-3'>
@@ -33,40 +36,52 @@ export default function Prices() {
 					/>
 					<div>
 						<h3 className='font-bold text-[#1F2148] text-sm md:text-base'>
-							Вес
+							{t('typeWeightTitle')}
 						</h3>
-						<p className='text-xs'>до 600 кг</p>
+						<p className='text-xs'>{t('typeWeight')}</p>
 					</div>
 				</div>
 			</div>
 
 			<h2 className='bg-[#1D5BD6] mx-auto py-4 md:py-[18px] rounded-xl md:rounded-2xl w-full max-w-[740px] font-semibold text-white lg:text-[32px] text-xl md:text-2xl text-center'>
-				Тарифы на доставку
+				{t('subTitle')}
 			</h2>
 
 			<div className='place-items-center gap-4 md:gap-6 lg:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mx-auto 2xl:pt-0 xl:pt-5 w-full max-w-[1280px] 2xl:-translate-y-[105px]'>
 				<PricesCard
-					oldPrice={false}
+					count='1'
+					oldPrice={true}
+					oldPriceValue={300}
+					newPrice={275}
 					sale={false}
 				/>
 				<PricesCard
+					count='2'
 					oldPrice={true}
+					oldPriceValue={250}
+					newPrice={220}
 					sale={false}
 					position='pre'
 				/>
 				<PricesCard
-					oldPrice={true}
+					count='3-4'
+					oldPrice={false}
 					sale={true}
+					newPrice={200}
 					position='center'
 				/>
 				<PricesCard
+					count='5-8'
 					oldPrice={false}
 					sale={false}
 					position='pre'
+					newPrice={175}
 				/>
 				<PricesCard
+					count='9-20'
 					oldPrice={false}
 					sale={false}
+					newPrice={140}
 				/>
 			</div>
 		</section>

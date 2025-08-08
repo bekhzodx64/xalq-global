@@ -1,0 +1,97 @@
+{
+	"Download": {
+		"follow": "Bizni kuzating",
+		"title": "Hoziroq yuklab oling"
+	},
+	"Footer": {
+		"address": "Manzil:",
+		"delivery": "Yetkazib berish siyosati",
+		"email": "Elektron pochta:",
+		"location": "Ofis Toshkentda: O'zbekiston, Sayram 7-ko'cha, № 17 uy",
+		"payments": "Biz qabul qilamiz:",
+		"policy": "Maxfiylik siyosati",
+		"rights": "Barcha huquqlar himoyalangan",
+		"rules": "Foydalanish shartlari",
+		"tel": "Telefon:"
+	},
+	"Form": {
+		"area": "Mahsulot va talabingizni kiriting",
+		"badge": "Bepul hisoblash",
+		"button": "Hisob kitobni olish",
+		"email": "Email manzilingiz",
+		"list1": "Individual hisob kitob",
+		"list2": "Mutahassis konsultatsiyasi",
+		"list3": "30 daqiqa ichida javob olish",
+		"name": "Ismingiz",
+		"tel": "Telefon raqamingiz",
+		"title": "Ariza qoldiring – yukingiz uchun yetkazish xarajatlarini hisoblab beramiz"
+	},
+	"Header": {
+		"cabinet": "Shaxsiy kabinet",
+		"contacts": "Kontaktlar",
+		"login": "Kirish",
+		"nav1": "Yetkazish tariflari",
+		"nav2": "Xizmatlar",
+		"nav3": "Bepul hisoblash"
+	},
+	"Info": {
+		"business": "Biznes va jismoniy shaxslar uchun mos keladi",
+		"call": "Qo'ng'iroq qilish",
+		"fast": "Shaffof tarif va tezkor yetkazib berish",
+		"legal": "Rasmiy tashuvlar",
+		"mix": "Ikkala tomonga: Toshkent – Moskva"
+	},
+	"Intro": {
+		"authorization": "Ro'yxatdan o'tish",
+		"badge": "Xalqaro yetkazish",
+		"calculate": "Narxini hisoblash",
+		"mainTitle": "Moskva – Toshkent va aksincha yoʻnalishda tijoriy yig‘ma yuklarni rasmiy yetkazish xizmati",
+		"subtitle": "Yuridik va jismoniy shaxslar bilan ishlaymiz."
+	},
+	"Plans": {
+		"button": "Ariza qoldirish",
+		"currency": "rub",
+		"measurement": "Birlik",
+		"plan10title": "Deklaratsiya",
+		"plan1qnty": "1 palleta / oy",
+		"plan1status": "standart palleta",
+		"plan1title": "Ishonchli saqlash",
+		"plan2qnty": "dona",
+		"plan2status": "qadoqlash, tekshirish",
+		"plan2title": "Palletani qabul qilish",
+		"plan3qnty": "pallet",
+		"plan3status": "agar tizimda bo'lmasa",
+		"plan3title": "Palletani yuklab jo‘natish",
+		"plan4qnty": "dokument",
+		"plan4status": "2.5 tonnagacha",
+		"plan4title": "Yukxati ko‘chirmasi",
+		"plan5qnty": "pozitsiya",
+		"plan5status": "shikast yetgan yuk",
+		"plan5title": "Xodimlar ishi",
+		"plan6qnty": "soat",
+		"plan6status": "yuk hajmiga bog'liq",
+		"plan6title": "Bazaga kiritish",
+		"plan7qnty": "akt",
+		"plan7title": "Vaznini oʻlchash",
+		"plan8title": "Foto qayd etilgan dalolatnoma",
+		"plan9title": "Plyonka bilan o‘rash",
+		"tariff": "Tarif",
+		"title": "Ombor xizmati tariflari"
+	},
+	"Prices": {
+		"forPalleta": "palleta uchun",
+		"palleta": "palleta",
+		"sale": "Chegirma",
+		"subTitle": "Tarif setkasi",
+		"top": "Ommabop tanlov",
+		"typeLength": "sm",
+		"typeTitle": "Yevro palleta",
+		"typeWeight": "600kg gacha",
+		"typeWeightTitle": "Og'irlik"
+	},
+	"Questions": {
+		"button": "Biz bilan bog'lanish",
+		"description": "Bizning jamoamiz sizga yordam berish uchun shu yerda. Sizning dam olishingizni iloji boricha qulay qilish uchun biz kunu tun, dam olish kunlarisiz ishlaymiz.",
+		"title": "Savollar qoldimi?"
+	}
+}

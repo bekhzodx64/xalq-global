@@ -1,7 +1,17 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { routing } from '@/i18n/routing'
+import { useLocale } from 'next-intl'
+import LocaleSwitcherSelect from './locale-switcher-select'
+
 export default function HeaderTop() {
+	const locale = useLocale()
+	const t = useTranslations('Header')
+
 	return (
 		<div className='bg-white py-2 md:py-3'>
 			<div className='flex justify-between items-center mx-auto px-4 container'>
@@ -25,7 +35,7 @@ export default function HeaderTop() {
 							href='/'
 							className='hover:text-blue-600 text-sm md:text-base transition-colors'
 						>
-							Контакты
+							{t('contacts')}
 						</Link>
 					</li>
 				</ul>
@@ -35,23 +45,21 @@ export default function HeaderTop() {
 						href='/'
 						className='block bg-[#1D5BD6] hover:bg-[#1a4fc7] px-4 md:px-8 py-2 md:py-3 rounded-lg font-medium text-white text-sm md:text-lg transition-colors'
 					>
-						<span className='hidden sm:inline'>Личный кабинет</span>
-						<span className='sm:hidden'>Войти</span>
+						<span className='hidden sm:inline'>{t('cabinet')}</span>
+						<span className='sm:hidden'>{t('login')}</span>
 					</Link>
 
-					<button
-						type='button'
-						className='flex items-center hover:text-blue-600 text-sm md:text-base uppercase transition-colors cursor-pointer'
-					>
-						<p>en</p>
-						<Image
-							src='/icons/chevron-down.svg'
-							width={16}
-							height={16}
-							alt='icon'
-							className='md:w-6 md:h-6'
-						/>
-					</button>
+					<LocaleSwitcherSelect defaultValue={locale}>
+						{routing.locales.map((cur) => (
+							<option
+								key={cur}
+								value={cur}
+								className='cursor-pointer'
+							>
+								{cur}
+							</option>
+						))}
+					</LocaleSwitcherSelect>
 				</div>
 			</div>
 		</div>

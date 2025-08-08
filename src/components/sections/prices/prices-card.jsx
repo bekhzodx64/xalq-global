@@ -1,6 +1,16 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-export default function PricesCard({ sale, position, oldPrice }) {
+export default function PricesCard({
+	sale,
+	position,
+	oldPrice,
+	oldPriceValue,
+	count,
+	newPrice,
+}) {
+	const t = useTranslations('Prices')
+
 	return (
 		<div
 			className={`${position === 'center' && '2xl:translate-y-[130px] '} ${
@@ -9,7 +19,7 @@ export default function PricesCard({ sale, position, oldPrice }) {
 		>
 			{sale && (
 				<span className='top-0 absolute bg-[#FD1A1D] px-4 md:px-6 lg:px-9 py-2 md:py-3 lg:py-3.5 rounded-full font-bold text-white text-xs md:text-sm -translate-y-1/2'>
-					Скидка
+					{t('sale')}
 				</span>
 			)}
 
@@ -23,10 +33,10 @@ export default function PricesCard({ sale, position, oldPrice }) {
 
 			<div className='text-center'>
 				<h3 className='font-bold text-[#1F2148] text-lg md:text-xl lg:text-2xl'>
-					5-8 паллет
+					{count} {t('palleta')}
 				</h3>
 				<p className='bg-clip-text bg-gradient-to-r from-[#FFB339] to-[#F7751E] text-transparent text-xs'>
-					⚡Популярный выбор
+					⚡{t('top')}
 				</p>
 			</div>
 
@@ -38,15 +48,15 @@ export default function PricesCard({ sale, position, oldPrice }) {
 				>
 					{oldPrice && (
 						<>
-							250$
+							{oldPriceValue}$
 							<span className='top-1/2 left-0 absolute bg-red-500 w-9 h-0.5 -rotate-6 -translate-x-[8%] -translate-y-1/2'></span>
 						</>
 					)}
 				</p>
 				<p className='bg-clip-text bg-gradient-to-r from-[#FFB339] to-[#F7751E] font-extrabold text-transparent text-2xl md:text-3xl lg:text-4xl'>
-					175 $
+					{newPrice} $
 				</p>
-				<p className='text-[#1F2148] text-sm md:text-base'>за паллету</p>
+				<p className='text-[#1F2148] text-sm md:text-base'>{t('forPalleta')}</p>
 			</div>
 		</div>
 	)
